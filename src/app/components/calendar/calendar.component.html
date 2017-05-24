@@ -1,0 +1,19 @@
+<div class="container container-rank">
+  <table class="table table-striped">
+      <thead>
+      </thead>
+      <tbody >
+        <tr *ngFor="let calendars of calendar ; let i = index">
+          <td scope="row">{{calendar[i].matchInfo.date | date:date}}</td>
+
+          <td class="equipos" *ngFor="let marca of calendar[i].matchInfo.contestant; let idx = index">
+            <h5 class="escudos"><img class="equipo" src="../../../assets/img/equipos/{{calendar[i].matchInfo.contestant[idx].name}}.png" alt="" title=""></h5>
+          <h5 class="shortName">{{calendar[i].matchInfo.contestant[idx].name}}</h5>
+        </td>
+            <td>{{calendar[i].matchInfo.time}}</td>
+              <td>{{calendar[i].matchInfo.stage.name}}</td>
+                <td>{{calendar[i].matchInfo.venue.shortName}}</td>
+                  <TD>{{dateObj}} </TD>
+      </tbody>
+    </table>
+</div>

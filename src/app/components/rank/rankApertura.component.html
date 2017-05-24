@@ -1,0 +1,33 @@
+<div class="container">
+  <table class="tabla_fase table table-condensed" id="pos_n1">
+  <thead><tr>
+  <th>Nº</th>
+  <th class="escudo"></th>
+  <th>Equipo</th>
+  <th>Pts.</th>
+  <th class="hidden-xs">Pj</th>
+  <th class="hidden-xs">Pg</th>
+  <th class="hidden-xs">Pe</th>
+  <th class="hidden-xs">Pp</th>
+  <th class="hidden-xs">Gf</th>
+  <th class="hidden-xs">Gc</th>
+  <th class="hidden-xs">Df</th>
+  </tr></thead>
+  <tbody *ngFor="let ranks of rank ; let i = index">
+  <tr class="linea e_899">
+    <td class="pos">{{rank[i].rank}}<img src="" alt=""></td>
+    <td class="escudo"><img src="../../../assets/img/{{rank[i].contestantShortName}}.gif" alt=""></td>
+    <td class="team" > {{rank[i].contestantShortName}} </td>
+    <td class="puntos destacado"><div class="border"><span class="badge">{{rank[i].points}}</span></div></td>
+    <td class="hidden-xs"><div class="border">{{rank[i].matchesPlayed}}</div></td>
+    <td class="hidden-xs"><div class="border">{{rank[i].matchesDrawn}}</div></td>
+    <td class="hidden-xs"><div class="border">{{rank[i].matchesWon}}</div></td>
+    <td class="hidden-xs"><div class="border">{{rank[i].matchesLost}}</div></td>
+    <td class="hidden-xs"><div class="border">{{rank[i].goalsFor}}</div></td>
+    <td class="hidden-xs"><div class="border">{{rank[i].goalsAgainst}}</div></td>
+    <td class="hidden-xs">{{rank[i].goaldifference}}</td>
+  </tr>
+  </tbody>
+  </table>
+
+</div>
