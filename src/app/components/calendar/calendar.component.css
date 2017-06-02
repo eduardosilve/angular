@@ -2,12 +2,32 @@ img.equipo{
   width:40px;
   height:40px;
 }
+
 h5.escudos{
   float:left;
 }
+
 h5.shortName{
   margin-left: 65px;
 }
+
 div.container-rank{
   margin-top: 50px;
+}
+
+tr.titles_tournament > th{
+background-color: #6F0707;
+font-style: italic;
+color: white;
+text-transform: uppercase;
+text-align: center;
+}
+tr.calendario_service > td.marcador, td.marcadorPend{
+  font-weight:bold;
+  font-size: large;
+}
+
+tr.calendario_service > td{
+  text-align: center;
+
 }

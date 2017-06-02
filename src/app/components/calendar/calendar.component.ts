@@ -6,13 +6,28 @@ import {CalendarService} from '../../servicios/calendar.service';
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent implements OnInit {
-calendar:any[]=[]
+  calendar:any[]=[]
 
-  constructor(private _calendarService:CalendarService ) { }
+  constructor(private _calendarService:CalendarService ) {
+
+
+  }
 
   ngOnInit() {
-   this.calendar = this._calendarService.getcalendar();
-    console.log(this.calendar);
+
+    this.calendar = this._calendarService.getcalendar();
+    var moment = require('moment');
+    moment().format();
+
+
+    for (var i in this.calendar) {
+
+      //console.log(moment(this.calendar[i].matchInfo.time));
+      let date = moment(this.calendar[i].matchInfo.time, "HH:mm:ssZ"); // false
+      this.calendar[i].matchInfo.time = date;
+    }
+
+
   }
 
 }

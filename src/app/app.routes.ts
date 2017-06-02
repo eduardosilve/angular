@@ -5,7 +5,7 @@ import { rankAperturaComponent } from './components/rank/rankApertura.component'
 const APP_ROUTES: Routes = [
   { path: 'Calendar', component: CalendarComponent },
   { path: 'ranking', component: rankAperturaComponent },
-  { path: '**', pathMatch: 'full', redirectTo: '' },
+  { path: '**', pathMatch: 'full', redirectTo: 'Calendar' },
 
 ];
 

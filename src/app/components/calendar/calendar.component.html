@@ -1,19 +1,35 @@
 <div class="container container-rank">
   <table class="table table-striped">
-      <thead>
-      </thead>
-      <tbody >
-        <tr *ngFor="let calendars of calendar ; let i = index">
-          <td scope="row">{{calendar[i].matchInfo.date | date:date}}</td>
+    <thead>
+      <tr class="titles_tournament">
+        <th>Fecha</th>
+        <th>Equipo Local</th>
+        <th>Equipo Visitante</th>
+        <th>Marcador</th>
+        <th>Hora</th>
+        <th>Etapa</th>
+        <th>Estadio</th>
 
-          <td class="equipos" *ngFor="let marca of calendar[i].matchInfo.contestant; let idx = index">
-            <h5 class="escudos"><img class="equipo" src="../../../assets/img/equipos/{{calendar[i].matchInfo.contestant[idx].name}}.png" alt="" title=""></h5>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let calendars of calendar ; let i = index" class="calendario_service">
+        <td scope="row">{{calendar[i].matchInfo.date | date:"fullDate"}}</td>
+
+        <td class="equipos" *ngFor="let marca of calendar[i].matchInfo.contestant; let idx = index">
+          <h5 class="escudos"><img class="equipo" src="../../../assets/img/equipos/{{calendar[i].matchInfo.contestant[idx].name}}.png" alt="{{calendar[i].matchInfo.contestant[idx].name}}" title="{{calendar[i].matchInfo.contestant[idx].name}}"></h5>
           <h5 class="shortName">{{calendar[i].matchInfo.contestant[idx].name}}</h5>
         </td>
-            <td>{{calendar[i].matchInfo.time}}</td>
-              <td>{{calendar[i].matchInfo.stage.name}}</td>
-                <td>{{calendar[i].matchInfo.venue.shortName}}</td>
-                  <TD>{{dateObj}} </TD>
-      </tbody>
-    </table>
-</div>
+        <td class="marcador" *ngIf="calendar[i].liveData.matchDetails.scores.total">
+          {{calendar[i].liveData.matchDetails.scores.total.home}} - {{calendar[i].liveData.matchDetails.scores.total.away}}
+        </td>
+        <td class="marcadorPend" *ngIf="!calendar[i].liveData.matchDetails.scores.total">Por jugar..</td>
+
+        <td>{{calendar[i].matchInfo.time | date:"shortTime"}}</td>
+        <td>{{calendar[i].matchInfo.stage.name}}</td>
+        <td>{{calendar[i].matchInfo.venue.shortName}}</td>
+        <td>{{calendar[i].matchInfo.week}}<td>
+
+        </tbody>
+      </table>
+    </div>

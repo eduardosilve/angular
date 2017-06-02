@@ -12,7 +12,7 @@ rank:any[]=[];
 
   ngOnInit() {
     this.rank = this._rankService.getRank();
-    console.log(this.rank);
+  //  console.log(this.rank);
   }
 
 }
