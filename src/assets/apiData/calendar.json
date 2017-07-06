@@ -1,9 +1,3 @@
-import { Injectable } from '@angular/core';
-
-@Injectable()
-export class CalendarService {
-
- private calendar: any[]=[
    {
      "match": [
        {
@@ -4684,12 +4678,4 @@ export class CalendarService {
        }
      ]
    }
-   ];
-   constructor() {
-
-    }
-    getcalendar(){
-      return this.calendar["0"].match;
-
-    }
- }
+   
