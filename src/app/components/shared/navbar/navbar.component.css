@@ -1,0 +1,26 @@
+.containerRank{
+  background-color: #E21E26;
+}
+.navbar-nav>li>a{
+  color: white;
+  font-weight: bold;
+}
+
+/* mouse over link */
+.navbar-nav>li>a:hover {
+  color: #white;
+  background-color:#00137A;
+}
+
+/* selected link */
+.navbar-nav>li>a:active {
+  color: white;
+  background-color: #00137A;
+}
+.navbar-nav>li>a:focus {
+  color: white;
+  background-color: #00137A;
+}
+li.rank{
+  margin-left: 15px;
+}

@@ -1,33 +1,83 @@
 import { Component, OnInit } from '@angular/core';
-import {CalendarService} from '../../servicios/calendar.service';
+import {matchService} from '../../servicios/match.service';
+
+
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
-  styleUrls: ['./calendar.component.css']
+  styleUrls: ['./calendar.component.css'],
+  providers:[matchService]
 })
+
 export class CalendarComponent implements OnInit {
-  calendar:any[]=[]
-
-  constructor(private _calendarService:CalendarService ) {
-
+  public calendar;
+  constructor(
+    private _matchService : matchService
+  ){
 
   }
-
   ngOnInit() {
 
-    this.calendar = this._calendarService.getcalendar();
-    var moment = require('moment');
-    moment().format();
+    this._matchService.getMatch().subscribe(
+      result => {
+        this.calendar = result.match;
 
 
-    for (var i in this.calendar) {
+      /***** moment for pipes time and dates *******/
 
-      //console.log(moment(this.calendar[i].matchInfo.time));
-      let date = moment(this.calendar[i].matchInfo.time, "HH:mm:ssZ"); // false
-      this.calendar[i].matchInfo.time = date;
-    }
+        var moment = require('moment');
+
+        /*
+        var localLocale = moment('2017-05-29Z');
+        moment.locale('es');
+        localLocale.locale(false);
+        alert(localLocale.format('LLLL'));
+        */
+
+  // UTC to GMT for time
+        for (var i in this.calendar) {
+          //console.log(moment(this.calendar[i].matchInfo.time));
+          moment.locale('es');
+          let time = moment(this.calendar[i].matchInfo.time, "HH:mm:ssZ"); // false
+          this.calendar[i].matchInfo.time = time;
+        }
+  // translate date to SPANISH
+        for (var i in this.calendar) {
+          let datef = moment(this.calendar[i].matchInfo.date,""); // false
+          datef.locale('es');
+          this.calendar[i].matchInfo.date = datef.format('LLLL');
+          let slice = this.calendar[i].matchInfo.date.slice(0,-6);
+          this.calendar[i].matchInfo.date = slice;
+        }
+  // translate stage to SPANISH for Quarter-finals, finals...
+        for (var i in this.calendar) {
+          let stage = this.calendar[i].matchInfo.stage.name;
+            stage = stage.replace("Quarter-finals", "Cuartos de final");
+            stage = stage.replace("Semi-finals", "Semi-finales");
+            stage = stage.replace("Finals", "Finales");
+            stage = stage.replace("Clausura -", "");
+            stage = stage.replace("Clausura", "");
+
+            this.calendar[i].matchInfo.stage.name = stage
+          
+
+        }
 
 
+        /********************/
+
+        //console.log(this.calendar.match);
+        if (!this.calendar){
+          console.log("Error en el servidor");
+        }
+
+      },
+      error =>{
+        var err = <any>error;
+        console.log(err);
+      }
+
+    );
   }
 
 }

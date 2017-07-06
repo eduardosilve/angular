@@ -7,13 +7,13 @@ import {APP_ROUTING} from './app.routes';
 
 //servicios
 import {rankService} from './servicios/rank.service';
-import {CalendarService} from './servicios/calendar.service';
+import {matchService} from './servicios/match.service';
+import {PeticionesService} from './servicios/calendarhttp.service';
 //componentes
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { rankAperturaComponent} from './components/rank/rankApertura.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
-
 import { ExampleComponent } from './components/example/example.component';
 
 @NgModule({
@@ -31,7 +31,7 @@ import { ExampleComponent } from './components/example/example.component';
     APP_ROUTING
   ],
   providers: [
-    rankService, CalendarService
+    rankService, matchService, PeticionesService
   ],
 
   bootstrap: [AppComponent]

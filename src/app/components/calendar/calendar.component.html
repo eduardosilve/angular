@@ -1,4 +1,4 @@
-<div class="container container-rank">
+ <div class="container container-rank">
   <table class="table table-striped">
     <thead>
       <tr class="titles_tournament">
@@ -14,7 +14,7 @@
     </thead>
     <tbody >
       <tr *ngFor="let calendars of calendar ; let i = index" class="calendario_service">
-        <td scope="row">{{calendar[i].matchInfo.date | date:"fullDate"}}</td>
+        <td scope="row">{{calendar[i].matchInfo.date}}</td>
 
         <td class="equipos" *ngFor="let marca of calendar[i].matchInfo.contestant; let idx = index">
           <h5 class="escudos"><img class="equipo" src="../../../assets/img/equipos/{{calendar[i].matchInfo.contestant[idx].name}}.png" alt="{{calendar[i].matchInfo.contestant[idx].name}}" title="{{calendar[i].matchInfo.contestant[idx].name}}"></h5>
@@ -24,11 +24,11 @@
           {{calendar[i].liveData.matchDetails.scores.total.home}} - {{calendar[i].liveData.matchDetails.scores.total.away}}
         </td>
         <td class="marcadorPend" *ngIf="!calendar[i].liveData.matchDetails.scores.total">Por jugar..</td>
-
         <td>{{calendar[i].matchInfo.time | date:"shortTime"}}</td>
-        <td>{{calendar[i].matchInfo.stage.name}}</td>
+        <td *ngIf="!calendar[i].matchInfo.stage.name">{{calendar[i].matchInfo.week}}</td>
+          <td *ngIf="calendar[i].matchInfo.stage.name">{{calendar[i].matchInfo.stage.name}}</td>
         <td>{{calendar[i].matchInfo.venue.shortName}}</td>
-        <td>{{calendar[i].matchInfo.week}}<td>
+        <!--<td>{{calendar[i].matchInfo.week}}<td>-->
 
         </tbody>
       </table>
