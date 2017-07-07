@@ -54,12 +54,12 @@
           </span>
           <span class="imx-cell-liga-mx imx-marcador-final-liga-mx imx-sprite-liga-mx">
             <span  *ngIf="calendar[i].liveData.matchDetails.scores.total">{{calendar[i].liveData.matchDetails.scores.total.home}}</span>
-            <span  *ngIf="!calendar[i].liveData.matchDetails.scores.total"></span>
+            <span  *ngIf="!calendar[i].liveData.matchDetails.scores.total">--</span>
           </span>
           <span class="imx-cell-liga-mx imx-vs-liga-mx imx-sprite-liga-mx"></span>
           <span class="imx-cell-liga-mx imx-marcador-final-liga-mx imx-sprite-liga-mx">
             <span  *ngIf="calendar[i].liveData.matchDetails.scores.total">{{calendar[i].liveData.matchDetails.scores.total.away}}</span>
-            <span  *ngIf="!calendar[i].liveData.matchDetails.scores.total"></span>
+            <span  *ngIf="!calendar[i].liveData.matchDetails.scores.total">--</span>
           </span>
           <span class="imx-cell-liga-mx imx-nombre-equipo-liga-mx">
             <span class="imx-sprite-liga-mx" id="imx-nombre-equipo-ligamx-{{calendar[i].matchInfo.contestant[1].name | guionPipe}}">
