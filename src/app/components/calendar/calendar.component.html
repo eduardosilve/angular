@@ -1,35 +1,116 @@
- <div class="container container-rank">
-  <table class="table table-striped">
-    <thead>
-      <tr class="titles_tournament">
-        <th>Fecha</th>
-        <th>Equipo Local</th>
-        <th>Equipo Visitante</th>
-        <th>Marcador</th>
-        <th>Hora</th>
-        <th>Etapa</th>
-        <th>Estadio</th>
+<!-- <div class="container container-rank">
+<table class="table table-striped">
+<thead>
+<tr class="titles_tournament">
+<th>Fecha</th>
+<th>Equipo Local</th>
+<th>Equipo Visitante</th>
+<th>Marcador</th>
+<th>Hora</th>
+<th>Etapa</th>
+<th>Estadio</th>
 
-      </tr>
-    </thead>
-    <tbody >
-      <tr *ngFor="let calendars of calendar ; let i = index" class="calendario_service">
-        <td scope="row">{{calendar[i].matchInfo.date}}</td>
+</tr>
+</thead>
+<tbody >
+<tr *ngFor="let calendars of calendar ; let i = index" class="calendario_service">
+<td scope="row">{{calendar[i].matchInfo.date}}</td>
 
-        <td class="equipos" *ngFor="let marca of calendar[i].matchInfo.contestant; let idx = index">
-          <h5 class="escudos"><img class="equipo" src="../../../assets/img/equipos/{{calendar[i].matchInfo.contestant[idx].name}}.png" alt="{{calendar[i].matchInfo.contestant[idx].name}}" title="{{calendar[i].matchInfo.contestant[idx].name}}"></h5>
-          <h5 class="shortName">{{calendar[i].matchInfo.contestant[idx].name}}</h5>
-        </td>
-        <td class="marcador" *ngIf="calendar[i].liveData.matchDetails.scores.total">
-          {{calendar[i].liveData.matchDetails.scores.total.home}} - {{calendar[i].liveData.matchDetails.scores.total.away}}
-        </td>
-        <td class="marcadorPend" *ngIf="!calendar[i].liveData.matchDetails.scores.total">Por jugar..</td>
-        <td>{{calendar[i].matchInfo.time | date:"shortTime"}}</td>
-        <td *ngIf="!calendar[i].matchInfo.stage.name">{{calendar[i].matchInfo.week}}</td>
-          <td *ngIf="calendar[i].matchInfo.stage.name">{{calendar[i].matchInfo.stage.name}}</td>
-        <td>{{calendar[i].matchInfo.venue.shortName}}</td>
-        <!--<td>{{calendar[i].matchInfo.week}}<td>-->
+<td class="equipos" *ngFor="let marca of calendar[i].matchInfo.contestant; let idx = index">
+<h5 class="escudos"><img class="equipo" src="../../../assets/img/equipos/{{calendar[i].matchInfo.contestant[idx].name}}.png" alt="{{calendar[i].matchInfo.contestant[idx].name}}" title="{{calendar[i].matchInfo.contestant[idx].name}}"></h5>
+<h5 class="shortName">{{calendar[i].matchInfo.contestant[idx].name}}</h5>
+</td>
+<td class="marcador" *ngIf="calendar[i].liveData.matchDetails.scores.total">
+{{calendar[i].liveData.matchDetails.scores.total.home}} - {{calendar[i].liveData.matchDetails.scores.total.away}}
+</td>
+<td class="marcadorPend" *ngIf="!calendar[i].liveData.matchDetails.scores.total">Por jugar..</td>
+<td>{{calendar[i].matchInfo.time | date:"shortTime"}}</td>
+<td *ngIf="!calendar[i].matchInfo.stage.name">{{calendar[i].matchInfo.week}}</td>
+<td *ngIf="calendar[i].matchInfo.stage.name">{{calendar[i].matchInfo.stage.name}}</td>
+<td>{{calendar[i].matchInfo.venue.shortName}}</td>
+<td>{{calendar[i].matchInfo.week}}<td>
+</tbody>
+</table>
+</div>
+-->
 
-        </tbody>
-      </table>
+<div class="imx-calendario-liga-mx-content">
+
+
+  <!-- Temporada Actual  -->
+
+  <div id="nfl-calendario-general" rol="">
+    <ul class="imx-item-liga-mx-fecha" id="id-content-calendar-season-ligaMX-380493">
+      <li class="imx-sprite-liga-mx " *ngFor="let calendars of calendar ; let i = index">
+        <span class="imx-nfl-row-calendario">
+          <span class="imx-cell-liga-mx imx-fecha-juego">{{calendar[i].matchInfo.date}}</span>
+          <span class="imx-cell-liga-mx imx-logo-equipo">
+            <img src="../../../assets/img/equipos/{{calendar[i].matchInfo.contestant[0].name}}.png" alt="{{calendar[i].matchInfo.contestant[0].name}}" title="{{calendar[i].matchInfo.contestant[0].name}}">
+          </span>
+          <span class="imx-cell-liga-mx imx-nombre-equipo-liga-mx">
+            <span class="imx-sprite-liga-mx" id="imx-nombre-equipo-ligamx-{{calendar[i].matchInfo.contestant[0].name | guionPipe}}" >
+                  {{calendar[i].matchInfo.contestant[0].name | guionPipe}}
+            </span>
+          </span>
+          <span class="imx-cell-liga-mx imx-marcador-final-liga-mx imx-sprite-liga-mx">
+            <span  *ngIf="calendar[i].liveData.matchDetails.scores.total">{{calendar[i].liveData.matchDetails.scores.total.home}}</span>
+            <span  *ngIf="!calendar[i].liveData.matchDetails.scores.total"></span>
+          </span>
+          <span class="imx-cell-liga-mx imx-vs-liga-mx imx-sprite-liga-mx"></span>
+          <span class="imx-cell-liga-mx imx-marcador-final-liga-mx imx-sprite-liga-mx">
+            <span  *ngIf="calendar[i].liveData.matchDetails.scores.total">{{calendar[i].liveData.matchDetails.scores.total.away}}</span>
+            <span  *ngIf="!calendar[i].liveData.matchDetails.scores.total"></span>
+          </span>
+          <span class="imx-cell-liga-mx imx-nombre-equipo-liga-mx">
+            <span class="imx-sprite-liga-mx" id="imx-nombre-equipo-ligamx-{{calendar[i].matchInfo.contestant[1].name | guionPipe}}">
+              {{calendar[i].matchInfo.contestant[1].name | guionPipe}}
+            </span>
+          </span>
+          <span class="imx-cell-liga-mx imx-logo-equipo">
+            <img src="../../../assets/img/equipos/{{calendar[i].matchInfo.contestant[1].name}}.png" alt="{{calendar[i].matchInfo.contestant[1].name}}" title="{{calendar[i].matchInfo.contestant[1].name}}">
+          </span>
+          <span class="imx-cell-liga-mx imx-fecha-juego-hora">{{calendar[i].matchInfo.time | date:"shortTime"}}</span>
+        </span>
+
+    </li><li class="imx-sprite-liga-mx ">
+      <a href="/adrenalina/liga-mx/partido/385075.html" target="_blank">
+        <span class="imx-nfl-row-calendario ">
+          <span class="imx-cell-liga-mx imx-fecha-juego">14 de enero</span>
+          <span class="imx-cell-liga-mx imx-logo-equipo">
+            <img src="http://www.excelsior.com.mx/media/datafactory/html/v3/htmlCenter/escudos/503.png" alt="Querétaro" title="Querétaro">
+          </span>
+          <span class="imx-cell-liga-mx imx-nombre-equipo-liga-mx">
+            <span class="imx-sprite-liga-mx" id="imx-nombre-equipo-ligamx-503">
+            </span>
+          </span>
+          <span class="imx-cell-liga-mx imx-marcador-final-liga-mx imx-sprite-liga-mx">
+            <span>0</span>
+          </span>
+          <span class="imx-cell-liga-mx imx-vs-liga-mx imx-sprite-liga-mx"></span>
+          <span class="imx-cell-liga-mx imx-marcador-final-liga-mx imx-sprite-liga-mx">
+            <span> 0 </span>
+          </span>
+          <span class="imx-cell-liga-mx imx-nombre-equipo-liga-mx">
+            <span class="imx-sprite-liga-mx" id="imx-nombre-equipo-ligamx-500">
+            </span>
+          </span>
+          <span class="imx-cell-liga-mx imx-logo-equipo">
+            <img src="http://www.excelsior.com.mx/media/datafactory/html/v3/htmlCenter/escudos/500.png" alt="Monarcas" title="Monarcas">
+          </span>
+          <span class="imx-cell-liga-mx imx-fecha-juego-hora">18:00 HRS.</span>
+        </span>
+      </a>
+    </li></ul>
+
+    <div class="imx-banner-liga-mx">
+      <span class="imx-sprite-liga-mx" id="banner-liga-mx-btn">
+        <span class="imx-link-nfl-excelsior">
+          <a target="_blank" href="http://www.excelsior.com.mx/"></a>
+        </span>
+        <span class="imx-link-nfl-adrenalina">
+          <a target="_blank" href="http://www.excelsior.com.mx/adrenalina"></a>
+        </span>
+      </span>
     </div>
+  </div>
+</div>

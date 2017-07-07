@@ -21,7 +21,7 @@ export class CalendarComponent implements OnInit {
     this._matchService.getMatch().subscribe(
       result => {
         this.calendar = result.match;
-
+       console.log(this.calendar);
 
       /***** moment for pipes time and dates *******/
 
@@ -46,7 +46,7 @@ export class CalendarComponent implements OnInit {
           let datef = moment(this.calendar[i].matchInfo.date,""); // false
           datef.locale('es');
           this.calendar[i].matchInfo.date = datef.format('LLLL');
-          let slice = this.calendar[i].matchInfo.date.slice(0,-6);
+          let slice = this.calendar[i].matchInfo.date.slice(0,-13);
           this.calendar[i].matchInfo.date = slice;
         }
   // translate stage to SPANISH for Quarter-finals, finals...
@@ -57,9 +57,8 @@ export class CalendarComponent implements OnInit {
             stage = stage.replace("Finals", "Finales");
             stage = stage.replace("Clausura -", "");
             stage = stage.replace("Clausura", "");
-
             this.calendar[i].matchInfo.stage.name = stage
-          
+
 
         }
 

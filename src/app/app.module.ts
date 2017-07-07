@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 //Routes
 import {APP_ROUTING} from './app.routes';
-
 //servicios
 import {rankService} from './servicios/rank.service';
 import {matchService} from './servicios/match.service';
@@ -15,6 +14,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { rankAperturaComponent} from './components/rank/rankApertura.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { ExampleComponent } from './components/example/example.component';
+//pipes
+import {guionPipe} from './pipes/guion.Pipe';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { ExampleComponent } from './components/example/example.component';
     NavbarComponent,
     rankAperturaComponent,
     CalendarComponent,
-    ExampleComponent
+    ExampleComponent,
+    guionPipe
     ],
   imports: [
     BrowserModule,
