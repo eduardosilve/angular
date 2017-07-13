@@ -1,26 +1,36 @@
-.containerRank{
-  background-color: #E21E26;
+.content-sub-menu-channel {
+  width: 100%;
+  margin-bottom: 5px;
 }
-.navbar-nav>li>a{
-  color: white;
+
+.sub-menu-channel {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.sub-content-row {
+  display: table-row;
+  width: 100%;
+}
+
+.row-cell {
+  display: table-cell;
+}
+
+.row-cell a {
+  color: #ffffff;
+  text-decoration: none;
+  font: 14px/30px 'Titillium Web',sans-serif;
   font-weight: bold;
-}
-
-/* mouse over link */
-.navbar-nav>li>a:hover {
-  color: #white;
-  background-color:#00137A;
-}
-
-/* selected link */
-.navbar-nav>li>a:active {
-  color: white;
-  background-color: #00137A;
-}
-.navbar-nav>li>a:focus {
-  color: white;
-  background-color: #00137A;
-}
-li.rank{
-  margin-left: 15px;
+  background: #e21e26;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 98%;
+  display: block;
+  text-transform: uppercase;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
 }
