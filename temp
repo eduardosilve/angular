@@ -1,0 +1,56 @@
+
+php56-scldevel.x86_64 : Package shipping development files for php56
+
+php56-php.x86_64 : PHP scripting language for creating dynamic web sites
+php56-build.x86_64 : Package shipping basic build configuration
+php56-php-gd.x86_64 : A module for PHP applications for using the gd graphics library
+
+php56-php-dba.x86_64 : A database abstraction layer module for PHP applications
+php56-php-dbg.x86_64 : The interactive PHP debugger
+php56-php-fpm.x86_64 : PHP FastCGI Process Manager
+php56-php-gmp.x86_64 : A module for PHP applications for using the GNU MP library
+php56-php-pdo.x86_64 : A database access abstraction module for PHP applications
+
+php56-php-imap.x86_64 : A module for PHP applications that use IMAP
+php56-php-oci8.x86_64 : A module for PHP applications that use OCI8 databases
+php56-php-odbc.x86_64 : A module for PHP applications that use ODBC databases
+
+php56-php-snmp.x86_64 : A module for PHP applications that query SNMP-managed devices
+php56-php-soap.x86_64 : A module for PHP applications that use the SOAP protocol
+php56-php-tidy.x86_64 : Standard PHP module provides tidy library support
+php56-php-devel.x86_64 : Files needed for building PHP extensions
+php56-php-mssql.x86_64 : MSSQL database module for PHP
+php56-php-pgsql.x86_64 : A PostgreSQL database module for PHP
+
+php56-php-mcrypt.x86_64 : Standard PHP module provides mcrypt library support
+php56-php-xmlrpc.x86_64 : A module for PHP applications which use the XML-RPC protocol
+php56-php-mysqlnd.x86_64 : A module for PHP applications that use MySQL databases
+php56-php-mbstring.x86_64 : A module for PHP applications which need multi-byte string handling
+
+
+
+dnf --enablerepo=remi install php56.x86_64
+
+
+libzip5                                      x86_64                         1.2.0-1.fc25.remi                               remi                          59 k
+ php56                                        x86_64                         2.1-5.fc25.remi                                 remi                         7.5 k
+ * php56-php-cli                                x86_64                         5.6.30-1.fc25.remi                              remi                         2.7 M
+ php56-php-common                             x86_64                         5.6.30-1.fc25.remi                              remi                         708 k
+ php56-php-pear                               noarch                         1:1.10.4-1.fc25.remi                            remi                         360 k
+ php56-php-pecl-jsonc                         x86_64                         1.3.10-1.fc25.remi                              remi                          48 k
+ php56-php-pecl-zip                           x86_64                         1.14.0-1.fc25.remi                              remi                          45 k
+ php56-php-process                            x86_64                         5.6.30-1.fc25.remi                              remi                          67 k
+ php56-php-xml                                x86_64                         5.6.30-1.fc25.remi                              remi                         169 k
+ php56-runtime                                x86_64                         2.1-5.fc25.remi                                 remi                         1.1 M
+
+
+/usr/bin/php56
+
+/opt/remi/php56/root/etc/php.ini
+
+
+[mysqld]
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+log-error=/var/log/mariadb/mariadb.log
+pid-file=/var/run/mariadb/mariadb.pid

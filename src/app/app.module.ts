@@ -7,13 +7,11 @@ import {APP_ROUTING} from './app.routes';
 //servicios
 import {rankService} from './servicios/rank.service';
 import {matchService} from './servicios/match.service';
-import {PeticionesService} from './servicios/calendarhttp.service';
 //componentes
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { rankAperturaComponent} from './components/rank/rankApertura.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
-import { ExampleComponent } from './components/example/example.component';
 //pipes
 import {guionPipe} from './pipes/guion.Pipe';
 
@@ -24,7 +22,6 @@ import {guionPipe} from './pipes/guion.Pipe';
     NavbarComponent,
     rankAperturaComponent,
     CalendarComponent,
-    ExampleComponent,
     guionPipe
     ],
   imports: [
@@ -34,7 +31,7 @@ import {guionPipe} from './pipes/guion.Pipe';
     APP_ROUTING
   ],
   providers: [
-    rankService, matchService, PeticionesService
+    rankService, matchService
   ],
 
   bootstrap: [AppComponent]

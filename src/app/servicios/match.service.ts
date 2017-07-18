@@ -10,7 +10,7 @@ export class matchService{
 public url : string ;
 
 constructor( private _http:Http){
-  this.url="../../assets/apiData/match.json";
+  this.url="assets/apiData/match.json";
 
 }
 getMatch(){

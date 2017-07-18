@@ -38,20 +38,20 @@ export class CalendarComponent implements OnInit {
         for (var i in this.calendar) {
           //console.log(moment(this.calendar[i].matchInfo.time));
           moment.locale('es');
-          let time = moment(this.calendar[i].matchInfo.time, "HH:mm:ssZ"); // false
+          var time = moment(this.calendar[i].matchInfo.time, "HH:mm:ssZ"); // false
           this.calendar[i].matchInfo.time = time;
         }
   // translate date to SPANISH
         for (var i in this.calendar) {
-          let datef = moment(this.calendar[i].matchInfo.date,""); // false
+          var datef = moment(this.calendar[i].matchInfo.date,""); // false
           datef.locale('es');
           this.calendar[i].matchInfo.date = datef.format('LLLL');
-          let slice = this.calendar[i].matchInfo.date.slice(0,-13);
+          var slice = this.calendar[i].matchInfo.date.slice(0,-13);
           this.calendar[i].matchInfo.date = slice;
         }
   // translate stage to SPANISH for Quarter-finals, finals...
         for (var i in this.calendar) {
-          let stage = this.calendar[i].matchInfo.stage.name;
+          var stage = this.calendar[i].matchInfo.stage.name;
             stage = stage.replace("Quarter-finals", "Cuartos de final");
             stage = stage.replace("Semi-finals", "Semi-finales");
             stage = stage.replace("Finals", "Finales");

@@ -1,351 +1,261 @@
-img.equipo{
-  width:40px;
-  height:40px;
+@media(min-width:50px) and (max-width: 349px){
+  .contentCalendar{
+    background: none !important;
+  }
+  .logo1{
+    margin-left: -5px;
+    margin-top:10px;
+  }
+  .logo2{
+    margin-top:10px;
+  }
+  .imx-matchDetails{
+    margin-left:10px;
+  }
+  .shortTimeEvent{
+    font-weight: bold;
+    margin-bottom:15px;
+    text-align:center !important;
+  }
+  .imx-date{
+      text-align:center;
+  }
 }
 
-h5.escudos{
-  float:left;
+@media(min-width:350px) and (max-width: 374px){
+  .shortTimeEvent{
+    padding-top: 5px !important;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-top:15px;
+      text-align:center !important;
+  }
+  .contentCalendar{
+    background: none !important;
+    font-weight: bold;
+  }
+  .logo1{
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .logo2{
+
+    margin-top: 10px;
+  }
+  .imx-date{
+    text-align:center;
+  }
 }
 
-h5.shortName{
-  margin-left: 65px;
+@media(min-width:375px) and (max-width: 413px){
+  .shortTimeEvent{
+    margin-bottom: 15px;
+    font-weight: bold;
+      text-align:center !important;
+  }
+  .contentCalendar{
+    background: none !important;
+    font-weight: bold;
+  }
+  .logo1{
+    margin-left:26px;
+    margin-top:10px;
+  }
+  .logo2{
+    margin-top:10px;
+  }
+  .imx-date{
+    text-align:center;
+  }
 }
 
-div.container-rank{
-  margin-top: 50px;
+@media(min-width:414px) and (max-width: 768px){
+  .shortTimeEvent{
+    margin-bottom: 15px;
+    font-weight: bold;
+    padding-bottom: 15px;
+      text-align:center !important;
+  }
+  .contentCalendar{
+    background: none !important;
+    font-weight: bold;
+  }
+  .logo1{
+    margin-left:43px;
+    padding-top: 10px;
+  }
+  .logo2{
+    padding-top: 10px;
+  }
+  .imx-date{
+    padding-top: 10px;
+    text-align:center;
+  }
 }
 
-tr.titles_tournament > th{
-background-color: #6F0707;
-font-style: italic;
-color: white;
-text-transform: uppercase;
-text-align: center;
-}
-tr.calendario_service > td.marcador, td.marcadorPend{
-  font-weight:bold;
-  font-size: large;
-}
-
-tr.calendario_service > td{
-  text-align: center;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-#main-content{
-min-height: initial !important;
+@media(min-width:769px) and (max-width:992px){
+  .shortTimeEvent{
+    width:110px
+  }
+  .contentCalendar{
+    margin-left: 27px;
+    margin-bottom: 15px;
+    background:none!important;
+    padding-top: 0 !important;
+  }
+  .imx-matchDetails{
+    margin-left: 10px;
+  }
+  .imx-date{
+    padding-top: 15px;
+    text-align: center;
+  }
+  .logo1{
+    padding-top: 10px;
+  }
+  .logo2{
+    padding-top: 10px;
+  }
 }
 
-.imx-sprite-liga-mx{
-background: url('http://a4abc406deb0a8793cfc-8f09eb7e0d12d12e8088bd883ec972c9.r81.cf2.rackcdn.com/sprites/design-2017/sprite-adrenalina-360-LigaMX-pages-full-4.png') no-repeat;
-}
-.imx-calendario-liga-mx-content{
-background: #450c13 url('http://a4abc406deb0a8793cfc-8f09eb7e0d12d12e8088bd883ec972c9.r81.cf2.rackcdn.com/background-ligaMX-pages-full.jpg') no-repeat;
-width: 99%;
-float: left;
-overflow: hidden;
-margin-left: 10px;
-}
-#imx-top-liga-mx{
-width: 950px;
-height: 65px;
-margin: 23px auto;
-}
-#imx-banner-nfl-escudos{
-height: 60px;
-margin: 56px 0 25px;
-background-position: -20px -97px;
-margin-top: 85px;
-}
-.imx-conten-logos-right,
-.imx-conten-logos-left{
-width: 327px;
-height: 25px;
-padding: 15px 50px 15px;
-float: left;
-}
-.imx-conten-logos-right p,
-.imx-conten-logos-left p{
-display: block;
-margin: 2px 0 0;
-width: 100%;
-}
-.imx-conten-logos-right p a,
-.imx-conten-logos-left p a{
-display: block;
-width: 28px;
-height: 25px;
-margin: 0 4px;
-float: left;
-}
-.imx-conten-logos-right{
-float: right;
-padding: 15px 50px 15px;
-}
-.imx-semana-calendario-nfl{
-width: 950px;
-height: 57px;
-margin: 23px auto;
-}
-#imx-top-semana-back{
-width: 100%;
-height:29px;
-display: block;
-margin: 0 auto;
-background-position: -21px -169px;
-}
-.imx-semana-no-liga-mx{
-width: 950px;
-display: table;
-height: 30px;
-overflow: hidden;
-margin: 0 auto
-}
-.imx-semana-no-liga-mx p{
-width: 100%;
-margin: 0;
-display: table-row;
-}
-.imx-semana-no-liga-mx p a{
-display: table-cell;
-width: 65px;
-text-align: center;
-/*background-position: -22px -257px;*/
-background : #d5d5d5;
-vertical-align: middle;
-height: 30px;
-color: #575757;
-font: 0.965em 'Titillium Web', sans-serif;
-text-decoration: none;
+@media(min-width:993px){
+  .contentCalendar{
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+  .shortTimeEvent{
+    width:114px;
+  }
 }
 
-.imx-semana-no-liga-mx p a:hover{
-color: #fff;
-/*background-position: -23px -222px;*/
-cursor: pointer;
+@media(min-width:1200px){}
+  div.container.container-liga > ul{
+    padding:0;
+  }
+  .shortTimeEvent{
+    padding-top:10px;
+  }
+  .container-liga{
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    color:white;
+    background: #450c13 url('http://a4abc406deb0a8793cfc-8f09eb7e0d12d12e8088bd883ec972c9.r81.cf2.rackcdn.com/background-ligaMX-pages-full.jpg') no-repeat;
+  }
+  .contentCalendar{
+    background: url('http://a4abc406deb0a8793cfc-8f09eb7e0d12d12e8088bd883ec972c9.r81.cf2.rackcdn.com/sprites/design-2017/sprite-adrenalina-360-LigaMX-pages-full-4.png') no-repeat;
+    /*margin:19px 0;*/
+    list-style:none;
+    background-position: -22px -301px !important;
+    padding-top: 0px;
 
-background: #1f1f1f; /* Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFmMWYxZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjM2IzYjNiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU3NTc1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-background: -moz-linear-gradient(top, #1f1f1f 0%, #3b3b3b 0%, #575757 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f1f1f), color-stop(0%,#3b3b3b), color-stop(100%,#575757)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #1f1f1f 0%,#3b3b3b 0%,#575757 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #1f1f1f 0%,#3b3b3b 0%,#575757 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #1f1f1f 0%,#3b3b3b 0%,#575757 100%); /* IE10+ */
-background: linear-gradient(to bottom, #1f1f1f 0%,#3b3b3b 0%,#575757 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#575757',GradientType=0 ); /* IE6-8 */
+  }
+  .container-liga-gen{
+    margin-top:30px;
 
-}
-#nfl-calendario-general{
-width: 994px;
-margin: 0.5em auto 0 ;
-overflow: hidden;
-}
-.imx-item-liga-mx-fecha{
-width: 100%;
-list-style: none;
-margin: 0 auto;
-padding: 0;
-display: table;
-}
-.imx-item-liga-mx-fecha li{
-width: 100%;
-height: 68px;
-background-position: -22px -301px;
-overflow: hidden;
-margin: 19px 0 ;
-}
+  }
+  .vsMatch{
+    width: 70px;
+    background-position: -42px -438px!important;
+    background: url('http://a4abc406deb0a8793cfc-8f09eb7e0d12d12e8088bd883ec972c9.r81.cf2.rackcdn.com/sprites/design-2017/sprite-adrenalina-360-LigaMX-pages-full-4.png') no-repeat;
+    height: 55px;
+  }
 
-.imx-item-liga-mx-fecha li.status-active{
-background-position: -22px -1393px !important;
-}
+  .imx-matchDetails{
+    padding-top: 11px;
+    font-size: 32px;
+    background: url('http://a4abc406deb0a8793cfc-8f09eb7e0d12d12e8088bd883ec972c9.r81.cf2.rackcdn.com/sprites/design-2017/sprite-adrenalina-360-LigaMX-pages-full-4.png') no-repeat;
+    text-align:center;
+    width: 60px;
+    background-position: -20px -378px;
+    height: 53px;
+  }
+  .matchInfo-contestant{
+    display: block;
+    width: 140px;
+    height: 50px;
+    margin: 0 auto;
+    text-align:center;
+    background: url('http://a4abc406deb0a8793cfc-8f09eb7e0d12d12e8088bd883ec972c9.r81.cf2.rackcdn.com/sprites/design-2017/sprite-adrenalina-360-LigaMX-pages-full-4.png') no-repeat;
+    height: 50px;
+  }
+.imx-date .logo1 .logo2 .vsMatch .shortTimeEvent{
+    text-align:center !important;
+  }
+  div.col-xs-2.col-sm-1.col-md-1.logo1 > img {
+    height: 40px !important;
+    width: 40px !important;
+  }
+  div.col-xs-2.col-sm-1.col-md-1.logo2 > img {
+    height: 40px !important;
+    width: 40px !important;
+  }
 
-.imx-item-liga-mx-fecha li a{
-text-decoration: none;
-color: #fff;
-}
-.imx-item-liga-mx-fecha li:last-child{
-margin: 19px 0 0;
-}
-.imx-nfl-row-calendario{
-width: 100%;
-height: 68px;
-display: table-row;
-}
-.imx-cell-liga-mx{
-display: table-cell;
-vertical-align: middle;
-text-align: center;
-font-family: 'Titillium Web', sans-serif;
-}
-.imx-fecha-juego{width: 200px; font-size: 20px ; color: #fff; }
-.imx-fecha-juego-hora{width: 140px; font-size: 20px ; color: #fff; }
-.imx-logo-equipo{ width: 50px; }
-.imx-logo-equipo img{ margin-top: 8px; width: 40px; }
-.imx-nombre-equipo-liga-mx{width: 170px;}
-.imx-marcador-final-liga-mx{ width: 60px; background-position: -20px -378px; height: 53px;}
-.imx-vs-liga-mx{ width: 70px; background-position: -42px -438px; }
-.imx-marcador-final-liga-mx span{
-display: block;
-margin: 0;
-color: #fff;
-font-size: 32px;
-}
-.imx-nombre-equipo-liga-mx span{display: block; width: 165px; height: 50px; margin: 0 auto;}
-.imx-banner-liga-mx-nfl{
-float: left;
-width: 100%;
-overflow: hidden;
-}
-#banner-liga-mx-btn{
-display: block;
-margin: 0 auto;
-width: 995px;
-height: 103px;
-background-position: -23px -1239px;
-}
-.imx-link-nfl-excelsior{
-display: block;
-height: 45px;
-padding: 40px 0 16px 304px;
-width: 190px;
-float: left;
-}
-.imx-link-nfl-adrenalina a,
-.imx-link-nfl-excelsior a{
-width: 100%;
-height: 40px;
-display: block;
-}
-.imx-link-nfl-adrenalina{
-display: block;
-height: 45px;
-padding: 40px 304px 16px 0;
-width: 190px;
-float: left;
-}
 
-#imx-liga-mx-escudo-item-america:hover{ background-position: -19px -13px; }
-#imx-liga-mx-escudo-item-chiapas:hover{ background-position: -54px -13px; }
-#imx-liga-mx-escudo-item-cruz-azul:hover{ background-position: -90px -13px; }
-#imx-liga-mx-escudo-item-morelia:hover{  background-position: -123px -13px; }
-#imx-liga-mx-escudo-item-queretaro:hover{  background-position: -157px -12px; }
-#imx-liga-mx-escudo-item-veracruz:hover{ background-position: -192px -14px; }
-#imx-liga-mx-escudo-item-atlas:hover{  background-position: -229px -14px; }
-#imx-liga-mx-escudo-item-santos:hover{  background-position: -263px -12px; }
-#imx-liga-mx-escudo-item-leon:hover{  background-position: -298px -12px }
 
-#imx-liga-mx-escudo-item-monterrey:hover{ background-position: -332px -12px;}
-#imx-liga-mx-escudo-item-pachuca:hover{  background-position: -367px -11px; }
-#imx-liga-mx-escudo-item-puebla:hover{ background-position: -401px -12px; }
-#imx-liga-mx-escudo-item-guadalajara:hover{ background-position: -434px -11px; }
-#imx-liga-mx-escudo-item-toluca:hover{ background-position: -468px -11px; }
-#imx-liga-mx-escudo-item-tigres:hover{ background-position: -504px -11px; }
-#imx-liga-mx-escudo-item-tijuana:hover{ background-position: -540px -11px; }
-#imx-liga-mx-escudo-item-pumas:hover{ background-position: -574px -11px; }
-#imx-liga-mx-escudo-item-leones-negros:hover{ background-position: -612px -11px; }
+  #imx-liga-mx-escudo-item-america:hover{ background-position: -19px -13px; }
+  #imx-liga-mx-escudo-item-chiapas:hover{ background-position: -54px -13px; }
+  #imx-liga-mx-escudo-item-cruz-azul:hover{ background-position: -90px -13px; }
+  #imx-liga-mx-escudo-item-morelia:hover{  background-position: -123px -13px; }
+  #imx-liga-mx-escudo-item-queretaro:hover{  background-position: -157px -12px; }
+  #imx-liga-mx-escudo-item-veracruz:hover{ background-position: -192px -14px; }
+  #imx-liga-mx-escudo-item-atlas:hover{  background-position: -229px -14px; }
+  #imx-liga-mx-escudo-item-santos:hover{  background-position: -263px -12px; }
+  #imx-liga-mx-escudo-item-leon:hover{  background-position: -298px -12px }
 
-#imx-liga-mx-escudo-item-dorados:hover{ background-position: -648px -12px; }
-#imx-liga-mx-escudo-item-necaxa:hover{ background-position: -688px -12px; }
+  #imx-liga-mx-escudo-item-monterrey:hover{ background-position: -332px -12px;}
+  #imx-liga-mx-escudo-item-pachuca:hover{  background-position: -367px -11px; }
+  #imx-liga-mx-escudo-item-puebla:hover{ background-position: -401px -12px; }
+  #imx-liga-mx-escudo-item-guadalajara:hover{ background-position: -434px -11px; }
+  #imx-liga-mx-escudo-item-toluca:hover{ background-position: -468px -11px; }
+  #imx-liga-mx-escudo-item-tigres:hover{ background-position: -504px -11px; }
+  #imx-liga-mx-escudo-item-tijuana:hover{ background-position: -540px -11px; }
+  #imx-liga-mx-escudo-item-pumas:hover{ background-position: -574px -11px; }
+  #imx-liga-mx-escudo-item-leones-negros:hover{ background-position: -612px -11px; }
 
-#imx-liga-mx-escudo-item-america{ background-position: -19px -54px; }
-#imx-liga-mx-escudo-item-chiapas{ background-position: -54px -54px; }
-#imx-liga-mx-escudo-item-cruz-azul{ background-position: -90px -54px; }
-#imx-liga-mx-escudo-item-morelia{  background-position: -123px -54px; }
-#imx-liga-mx-escudo-item-queretaro{  background-position: -157px -53px; }
-#imx-liga-mx-escudo-item-veracruz{ background-position: -192px -55px; }
-#imx-liga-mx-escudo-item-atlas{  background-position: -229px -55px; }
-#imx-liga-mx-escudo-item-santos{  background-position: -263px -53px; }
-#imx-liga-mx-escudo-item-leon{  background-position: -298px -53px }
+  #imx-liga-mx-escudo-item-dorados:hover{ background-position: -648px -12px; }
+  #imx-liga-mx-escudo-item-necaxa:hover{ background-position: -688px -12px; }
 
-#imx-liga-mx-escudo-item-monterrey{ background-position: -332px -53px;}
-#imx-liga-mx-escudo-item-pachuca{  background-position: -367px -52px; }
-#imx-liga-mx-escudo-item-puebla{ background-position: -401px -53px; }
-#imx-liga-mx-escudo-item-guadalajara{ background-position: -434px -52px; }
-#imx-liga-mx-escudo-item-toluca{ background-position: -468px -52px; }
-#imx-liga-mx-escudo-item-tigres{ background-position: -504px -52px; }
-#imx-liga-mx-escudo-item-tijuana{ background-position: -540px -52px; }
-#imx-liga-mx-escudo-item-pumas{ background-position: -574px -52px; }
-#imx-liga-mx-escudo-item-leones-negros{ background-position: -612px -52px; }
+  #imx-liga-mx-escudo-item-america{ background-position: -19px -54px; }
+  #imx-liga-mx-escudo-item-chiapas{ background-position: -54px -54px; }
+  #imx-liga-mx-escudo-item-cruz-azul{ background-position: -90px -54px; }
+  #imx-liga-mx-escudo-item-morelia{  background-position: -123px -54px; }
+  #imx-liga-mx-escudo-item-queretaro{  background-position: -157px -53px; }
+  #imx-liga-mx-escudo-item-veracruz{ background-position: -192px -55px; }
+  #imx-liga-mx-escudo-item-atlas{  background-position: -229px -55px; }
+  #imx-liga-mx-escudo-item-santos{  background-position: -263px -53px; }
+  #imx-liga-mx-escudo-item-leon{  background-position: -298px -53px }
 
-#imx-liga-mx-escudo-item-dorados{ background-position: -648px -54px }
-#imx-liga-mx-escudo-item-necaxa{ background-position: -688px -51px }
+  #imx-liga-mx-escudo-item-monterrey{ background-position: -332px -53px;}
+  #imx-liga-mx-escudo-item-pachuca{  background-position: -367px -52px; }
+  #imx-liga-mx-escudo-item-puebla{ background-position: -401px -53px; }
+  #imx-liga-mx-escudo-item-guadalajara{ background-position: -434px -52px; }
+  #imx-liga-mx-escudo-item-toluca{ background-position: -468px -52px; }
+  #imx-liga-mx-escudo-item-tigres{ background-position: -504px -52px; }
+  #imx-liga-mx-escudo-item-tijuana{ background-position: -540px -52px; }
+  #imx-liga-mx-escudo-item-pumas{ background-position: -574px -52px; }
+  #imx-liga-mx-escudo-item-leones-negros{ background-position: -612px -52px; }
 
-#imx-nombre-equipo-ligamx-América{ background-position: 3px -507px;} /* America */
-#imx-nombre-equipo-ligamx-Guadalajara{background-position: 16px -982px;} /* Chivas */
-#imx-nombre-equipo-ligamx-Tijuana{background-position: 19px -1101px;} /* Tijuana */
-#imx-nombre-equipo-ligamx-Toluca{background-position: 14px -1023px;} /* Toluca */
-#imx-nombre-equipo-ligamx-Tigres-UANL{background-position: 14px -1061px;} /* Tigres */
-#imx-nombre-equipo-ligamx-Pumas-UNAM{background-position: 13px -1141px;} /* pumas */
-#imx-nombre-equipo-ligamx-Leones-Negros{background-position: -21px -1178px;} /* Leones Negros */
-#imx-nombre-equipo-ligamx-leon{background-position: 22px -823px;} /* Leon */
-#imx-nombre-equipo-ligamx-Santos-Laguna{background-position: 10px -784px;} /* Santos */
-#imx-nombre-equipo-ligamx-Chiapas{background-position: 0px -549px;} /* Jaguares */
-#imx-nombre-equipo-ligamx-Cruz-Azul{background-position: -5px -588px;} /* Cruz Azul */
-#imx-nombre-equipo-ligamx-Morelia{background-position: -3px -633px;} /* Monarcas */
-#imx-nombre-equipo-ligamx-Querétaro{ background-position: 10px -666px; 	} /* Gallos */
-#imx-nombre-equipo-ligamx-Veracruz{background-position: -5px -706px;} /* Veracruz */
-#imx-nombre-equipo-ligamx-Atlas{background-position: 16px -746px;} /* Atlas */
-#imx-nombre-equipo-ligamx-Monterrey{background-position: -13px -864px;} /* Monterrey */
-#imx-nombre-equipo-ligamx-Pachuca{background-position: 0px -903px;} /* Pachuca */
-#imx-nombre-equipo-ligamx-Puebla{background-position: 9px -942px;} /* Puebla */
-#imx-nombre-equipo-ligamx-Dorados{ background-position: 15px -1537px; }
-#imx-nombre-equipo-ligamx-Necaxa{ background-position: -290px -507px;  }/*Necaxa*/
+  #imx-liga-mx-escudo-item-dorados{ background-position: -648px -54px }
+  #imx-liga-mx-escudo-item-necaxa{ background-position: -688px -51px }
 
-#imx-nombre-equipo-ligamx-0{ background-position: 0 50px; }
-
-.imx-display-off{
-display: none !important;
-}
-
-.imx-season-active-btn{
-color: #fff !important;
-
-background: #1f1f1f !important; /* Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFmMWYxZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjM2IzYjNiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU3NTc1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=) !important;
-background: -moz-linear-gradient(top, #1f1f1f 0%, #3b3b3b 0%, #575757 100%) !important; /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f1f1f), color-stop(0%,#3b3b3b), color-stop(100%,#575757)) !important; /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #1f1f1f 0%,#3b3b3b 0%,#575757 100%) !important; /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #1f1f1f 0%,#3b3b3b 0%,#575757 100%) !important; /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #1f1f1f 0%,#3b3b3b 0%,#575757 100%) !important; /* IE10+ */
-background: linear-gradient(to bottom, #1f1f1f 0%,#3b3b3b 0%,#575757 100%) !important; /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#575757',GradientType=0 ) !important; /* IE6-8 */
-}
-
-.btns-adrenalina360-ligamx{
-width: 89%;
-}
-
-#block-sub-menu-pages-calendar{
-margin-top: 15px;
-}
-
-.background-barra-page-game{
-width: 998px;
-height: 30px;
-display: block;
-text-align: center;
-vertical-align: middle;
-margin-left: 6px;
-overflow: hidden;
-clear: both;
-background-position: -10px -1492px;
-font: 1.1em/27px 'Titillium Web', sans-serif;
-color: #fff;
-text-transform: uppercase;
-}
-
-.stage-goleadores-pages > img{
-width: 994px;
-}
+  #imx-nombre-equipo-ligamx-América{ background-position: 3px -507px !important;} /* America */
+  #imx-nombre-equipo-ligamx-Guadalajara{background-position: 16px -982px !important;} /* Chivas */
+  #imx-nombre-equipo-ligamx-Tijuana{background-position: 19px -1101px !important;} /* Tijuana */
+  #imx-nombre-equipo-ligamx-Toluca{background-position: 14px -1023px !important;} /* Toluca */
+  #imx-nombre-equipo-ligamx-Tigres-UANL{background-position: 14px -1061px !important;} /* Tigres */
+  #imx-nombre-equipo-ligamx-Pumas-UNAM{background-position: 13px -1141px !important;} /* pumas */
+  #imx-nombre-equipo-ligamx-Leones-Negros{background-position: -21px -1178px !important;} /* Leones Negros */
+  #imx-nombre-equipo-ligamx-leon{background-position: 22px -823px !important;} /* Leon */
+  #imx-nombre-equipo-ligamx-Santos-Laguna{background-position: 10px -784px !important;} /* Santos */
+  #imx-nombre-equipo-ligamx-Chiapas{background-position: 0px -549px !important;} /* Jaguares */
+  #imx-nombre-equipo-ligamx-Cruz-Azul{background-position: -5px -588px !important;} /* Cruz Azul */
+  #imx-nombre-equipo-ligamx-Morelia{background-position: -3px -633px !important;} /* Monarcas */
+  #imx-nombre-equipo-ligamx-Querétaro{ background-position: 10px -666px !important; 	} /* Gallos */
+  #imx-nombre-equipo-ligamx-Veracruz{background-position: -5px -706px !important;} /* Veracruz */
+  #imx-nombre-equipo-ligamx-Atlas{background-position: 16px -746px !important;} /* Atlas */
+  #imx-nombre-equipo-ligamx-Monterrey{background-position: -13px -864px !important;} /* Monterrey */
+  #imx-nombre-equipo-ligamx-Pachuca{background-position: 0px -903px !important;} /* Pachuca */
+  #imx-nombre-equipo-ligamx-Puebla{background-position: 9px -942px !important;} /* Puebla */
+  #imx-nombre-equipo-ligamx-Dorados{ background-position: 15px -1537px !important; }
+  #imx-nombre-equipo-ligamx-Necaxa{ background-position: -290px -507px !important;  }/*Necaxa*/
+  #imx-nombre-equipo-ligamx-0{ background-position: 0 50px !important; }

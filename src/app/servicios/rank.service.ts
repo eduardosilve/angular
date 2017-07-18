@@ -10,7 +10,7 @@ export class rankService{
 public url : string ;
 
 constructor( private _http:Http){
-  this.url="../../assets/apiData/standings-posiciones.json";
+  this.url="assets/apiData/standings-posiciones.json";
 
 }
 getRank(){
