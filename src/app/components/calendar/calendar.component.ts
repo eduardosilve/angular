@@ -21,7 +21,7 @@ export class CalendarComponent implements OnInit {
     this._matchService.getMatch().subscribe(
       result => {
         this.calendar = result.match;
-       console.log(this.calendar);
+       //console.log(this.calendar);
 
       /***** moment for pipes time and dates *******/
 

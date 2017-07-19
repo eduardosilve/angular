@@ -3,9 +3,9 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 import { rankAperturaComponent } from './components/rank/rankApertura.component';
 
 const APP_ROUTES: Routes = [
-  { path: 'Calendar', component: CalendarComponent },
-  { path: 'ranking', component: rankAperturaComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'HOME' },
+  { path: 'calendario', component: CalendarComponent },
+  { path: 'tabla-general', component: rankAperturaComponent },
+  { path: '**', pathMatch: 'full', redirectTo: 'calendario' },
 
 ];
 

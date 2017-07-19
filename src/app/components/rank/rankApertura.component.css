@@ -1,3 +1,8 @@
+td.escudo > img{
+  width:40px !important;
+  height:40px !important;
+}
+
 #pos_n1 > tbody > tr > td.pos{
     font-size: 24px;
     color: #fd0001;

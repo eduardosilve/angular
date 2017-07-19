@@ -5,7 +5,7 @@
 
         <div class="col-xs-12 col-sm-4 col-md-2 imx-date">{{calendar[i].matchInfo.date}} </div>
         <div class="col-xs-2 col-sm-1 col-md-1 logo1">
-          <img src="assets/img/equipos/{{calendar[i].matchInfo.contestant[0].name}}.png" alt="{{calendar[i].matchInfo.contestant[0].name}}" title="{{calendar[i].matchInfo.contestant[0].name}}">
+          <img src="http://cdn2.excelsior.imagendigital.com/adrenalina/torneos/liga-mx/escudos/{{calendar[i].matchInfo.contestant[0].name | lowercase | guionPipe}}.png" alt="{{calendar[i].matchInfo.contestant[0].name}}" title="{{calendar[i].matchInfo.contestant[0].name}}">
         </div>
         <div class="col-xs-2 col-sm-1 col-md-1 hidden-xs hidden-sm matchInfo-contestant" id="imx-nombre-equipo-ligamx-{{calendar[i].matchInfo.contestant[0].name | guionPipe}}">
           <!--  {{calendar[i].matchInfo.contestant[0].name | guionPipe}} -->
@@ -24,7 +24,7 @@
           <!--  {{calendar[i].matchInfo.contestant[1].name | guionPipe}} -->
         </div>
         <div class="col-xs-2 col-sm-1 col-md-1 logo2">
-          <img src="assets/img/equipos/{{calendar[i].matchInfo.contestant[1].name}}.png" alt="{{calendar[i].matchInfo.contestant[1].name}}" title="{{calendar[i].matchInfo.contestant[1].name}}">
+          <img src="http://cdn2.excelsior.imagendigital.com/adrenalina/torneos/liga-mx/escudos/{{calendar[i].matchInfo.contestant[1].name | lowercase | guionPipe}}.png" alt="{{calendar[i].matchInfo.contestant[1].name}}" title="{{calendar[i].matchInfo.contestant[1].name}}">
         </div>
         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-2 shortTimeEvent">{{calendar[i].matchInfo.time | date:"shortTime"}}</div>
 

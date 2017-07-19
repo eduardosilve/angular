@@ -9,7 +9,7 @@ import {rankService} from './servicios/rank.service';
 import {matchService} from './servicios/match.service';
 //componentes
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/shared/navbar/navbar.component';
+//import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { rankAperturaComponent} from './components/rank/rankApertura.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 //pipes
@@ -19,7 +19,7 @@ import {guionPipe} from './pipes/guion.Pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
+  //  NavbarComponent,
     rankAperturaComponent,
     CalendarComponent,
     guionPipe

@@ -17,7 +17,7 @@
   <tbody *ngFor="let ranks of rank ; let i = index">
   <tr class="linea e_899">
     <td class="pos">{{rank[i].rank}}<img src="" alt=""></td>
-    <td class="escudo"><img src="../../../assets/img/{{rank[i].contestantShortName}}.gif" alt=""></td>
+    <td class="escudo"><img src="http://cdn2.excelsior.imagendigital.com/adrenalina/torneos/liga-mx/escudos/{{rank[i].contestantClubName | guionPipe | lowercase}}.png" alt=""></td>
     <td class="team" > {{rank[i].contestantShortName}} </td>
     <td class="puntos destacado"><div class="border"><span class="badge">{{rank[i].points}}</span></div></td>
     <td class="hidden-xs"><div class="border">{{rank[i].matchesPlayed}}</div></td>
