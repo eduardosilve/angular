@@ -1,7 +1,19 @@
+<div style="text-align:center;">
+    <button class="pagination" (click)="cambiarPagina(10)">10</button>
+    <button class="pagination" (click)="cambiarPagina(11)">11</button>
+    <button class="pagination" (click)="cambiarPagina(12)">12</button>
+    <button class="pagination" (click)="cambiarPagina(13)">13</button>
+    <button class="pagination" (click)="cambiarPagina(14)">14</button>
+    <button class="pagination" (click)="cambiarPagina(15)">15</button>
+    <button class="pagination" (click)="cambiarPagina(16)">16</button>
+    <button class="pagination" (click)="cambiarPagina(17)">17</button>
+</div>
+
 <div class="container container-liga">
+
   <ul class="container-liga-gen">
     <li class="contentCalendar" *ngFor="let calendars of calendar ; let i = index">
-      <div class="row content-row">
+      <div class="row content-row" *ngIf="calendar[i].matchInfo.week == 17">
 
         <div class="col-xs-12 col-sm-4 col-md-2 imx-date">{{calendar[i].matchInfo.date}} </div>
         <div class="col-xs-2 col-sm-1 col-md-1 logo1">
@@ -33,7 +45,7 @@
     </li>
   </ul>
 </div>
-
+<!--
 <div class="imx-banner-liga-mx">
   <span class="imx-sprite-liga-mx" id="banner-liga-mx-btn">
     <span class="imx-link-nfl-excelsior">
@@ -44,3 +56,4 @@
     </span>
   </span>
 </div>
+-->
